@@ -1,15 +1,20 @@
-const QRCode = require('qrcode');
+const QRCode = require("qrcode");
 
-const data = 'https://www.elektro-merkle.de/'; // Change this to the URL or text you want to encode
+const data = "https://www.instagram.com/elektromerkle/"; // Change this to the URL or text you want to encode
 
-QRCode.toFile('qrcode.png', data, {
-    type: 'png',
-    width: 600,
-    margin: 2
-}, (err) => {
-    if (err) {
-        console.error('Error generating QR code:', err);
-    } else {
-        console.log('QR code generated successfully: qrcode.png');
-    }
-});
+QRCode.toFile(
+	"elektro-merkle-instagram.png",
+	data,
+	{
+		type: "png",
+		width: 600,
+		margin: 2,
+	},
+	(err) => {
+		if (err) {
+			console.error("Error generating QR code:", err);
+		} else {
+			console.log("QR code generated successfully: qrcode.png");
+		}
+	}
+);
